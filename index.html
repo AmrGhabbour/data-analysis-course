@@ -1,0 +1,657 @@
+<!doctype html>
+<html lang="ar" dir="rtl" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>كورس تحليل البيانات | Data Analysis Course · Amr Ghabbour</title>
+<meta name="description" content="كورس تحليل بيانات عملي من Excel و SQL Server و Power BI لحد Python و AI Agents، مع فهم حقيقي للبيزنس والـ KPIs. Live Sessions مرتين في الأسبوع ومتابعة فردية. يبدأ 15 ديسمبر 2026.">
+<meta name="author" content="Amr Ghabbour">
+<meta name="theme-color" content="#070d1a">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<!-- Social sharing preview (WhatsApp / Facebook / LinkedIn). After publishing, replace the image path with the full URL. -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ar_EG">
+<meta property="og:title" content="Data Analysis Course · حوّل البيانات لقرارات… ومهاراتك لفرص حقيقية">
+<meta property="og:description" content="Excel · Statistics · SQL Server · Power BI · Python · AI Agents، مع فهم البيزنس والـ KPIs ومتابعة فردية أسبوعية. مع Amr Ghabbour.">
+<meta property="og:image" content="assets/img/og-cover.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;600;700;800;900&family=Inter:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/img/amr-hero.webp" type="image/webp">
+<link rel="stylesheet" href="style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "Data Analysis Course",
+  "description": "كورس تحليل بيانات عملي: Excel، الإحصاء، SQL Server، Data Modeling، Power BI و DAX، Python، و AI Agents، مع فهم البيزنس والـ KPIs.",
+  "inLanguage": "ar",
+  "provider": { "@type": "Person", "name": "Amr Ghabbour", "jobTitle": "Data Analyst | Business Intelligence Specialist | Data Analysis Instructor" },
+  "offers": { "@type": "Offer", "price": "7500", "priceCurrency": "EGP", "category": "Paid" },
+  "hasCourseInstance": { "@type": "CourseInstance", "courseMode": "online", "startDate": "2026-12-15", "instructor": { "@type": "Person", "name": "Amr Ghabbour" } }
+}
+</script>
+</head>
+<body>
+
+<!-- ===== Icon set (used with <use href="#i-name">) ===== -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.42-.08-.12-.27-.2-.57-.34m-5.42 7.4h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.22-3.74.99 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.69 1.45h.01c6.55 0 11.89-5.34 11.89-11.89 0-3.18-1.24-6.16-3.48-8.41z"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 6-6"/></symbol>
+    <symbol id="i-calc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2.5" width="14" height="19" rx="2.5"/><path d="M8.5 6.5h7M8.5 11h.01M12 11h.01M15.5 11h.01M8.5 14.5h.01M12 14.5h.01M15.5 14.5h.01M8.5 18h.01M12 18h3.5"/></symbol>
+    <symbol id="i-pill" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10.5 20.5a5 5 0 0 1-7-7l7-7a5 5 0 0 1 7 7z"/><path d="M8.5 8.5l7 7"/></symbol>
+    <symbol id="i-mega" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11v2a1 1 0 0 0 1 1h2l5 4V6L6 10H4a1 1 0 0 0-1 1z"/><path d="M15 9a3 3 0 0 1 0 6M18 6a7 7 0 0 1 0 12"/></symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 6h11v10H2zM13 9h4l4 4v3h-8"/><circle cx="6" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></symbol>
+    <symbol id="i-box" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8l-9-5-9 5v8l9 5 9-5z"/><path d="M3 8l9 5 9-5M12 13v8"/></symbol>
+    <symbol id="i-brief" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="7" width="19" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M2.5 13h19"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/><path d="M17 4.5l1.5 1.5L21 3.5"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2.5H6.5a2 2 0 0 0-2 2v15a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V8z"/><path d="M14 2.5V8h5.5M8.5 14.5l2.5 2.5 4.5-5"/></symbol>
+    <symbol id="i-trend" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></symbol>
+    <symbol id="i-live" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5" width="13" height="14" rx="2"/><path d="M15.5 10l6-3.5v11l-6-3.5"/><circle cx="7" cy="9.5" r="1.3" fill="currentColor"/></symbol>
+    <symbol id="i-rec" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5"/><path d="M10 8.5l5.5 3.5-5.5 3.5z" fill="currentColor"/></symbol>
+    <symbol id="i-mic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20.5l1.4-4.7A8 8 0 1 1 21 12z"/><path d="M9 10.5h6M9 13.5h4"/></symbol>
+    <symbol id="i-folder" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6.5a2 2 0 0 1 2-2h4l2 2.5h8a2 2 0 0 1 2 2V18a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M8 15l2.5-2.5 2 2 3.5-3.5"/></symbol>
+    <symbol id="i-bank" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5L12 4l9 5.5M4.5 10v8M9.5 10v8M14.5 10v8M19.5 10v8M3 20.5h18"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M10.5 18h3M9.5 10.5l2 2 3.5-3.5"/></symbol>
+    <symbol id="i-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  </defs>
+</svg>
+
+<a class="skip" href="#main">انتقل للمحتوى</a>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Data Analysis Course: أول الصفحة">
+      <span class="logo" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"><path d="M5 19V13M10 19V8M15 19v-5M20 19V5"/></svg></span>
+      <span><b>Data Analysis Course</b><small>with Amr Ghabbour</small></span>
+    </a>
+    <button class="menu-btn" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="فتح القائمة"><svg aria-hidden="true"><use href="#i-menu"/></svg></button>
+    <nav class="nav" id="site-nav" aria-label="القائمة الرئيسية">
+      <a href="#curriculum">المنهج</a>
+      <a href="#business">البيزنس</a>
+      <a href="#projects">المشاريع</a>
+      <a href="#support">المتابعة</a>
+      <a href="#instructor">المحاضر</a>
+      <a href="#pricing">السعر</a>
+      <a href="#faq">أسئلة شائعة</a>
+      <a class="btn btn-primary" data-wa="header" href="https://wa.me/96569651179" target="_blank" rel="noopener noreferrer">احجز مكانك</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ================= 1. HERO ================= -->
+<section class="hero" id="top" aria-labelledby="hero-title">
+  <div class="wrap">
+    <div class="hero-copy">
+      <span class="eyebrow"><span class="en">Data Analysis Course</span></span>
+      <h1 id="hero-title">حوّل البيانات <span class="hl">لقرارات</span>… ومهاراتك لفرص حقيقية.</h1>
+      <p class="en-line">Turn Data Into Decisions. Turn Your Skills Into Opportunities.</p>
+      <p class="lead">هتتعلم أدوات تحليل البيانات اللي بتتطلب في الشغل، والأهم: إزاي تستخدمها عشان تجاوب أسئلة بيزنس حقيقية وتطلّع منها قرار. خطوة بخطوة، على بيانات شركة واحدة متكاملة، ومعاك متابعة لحد آخر الكورس.</p>
+      <ul class="benefits">
+        <li><i aria-hidden="true">1</i><span>من Excel لحد Power BI و Python و AI Agents في 8 موديولات و 71 درس</span></li>
+        <li><i aria-hidden="true">2</i><span>فهم البيزنس: KPIs، الإيراد والربحية، العملاء، وتحليل السبب الجذري</span></li>
+        <li><i aria-hidden="true">3</i><span>Live Sessions مرتين في الأسبوع، وكل Session بتتسجّل وتترفع على Drive</span></li>
+        <li><i aria-hidden="true">4</i><span>متابعة فردية أسبوعية، مراجعة لواجباتك، و Mock Interview بعد الكورس</span></li>
+      </ul>
+      <div class="ctas">
+        <a class="btn btn-primary btn-lg" data-wa="hero" href="https://wa.me/96569651179" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true"><use href="#i-wa"/></svg>احجز مكانك الآن</a>
+        <a class="btn btn-ghost btn-lg" href="#curriculum">اكتشف تفاصيل الكورس</a>
+      </div>
+      <div class="facts">
+        <span>البداية: <b data-start>15 ديسمبر 2026</b></span>
+        <span>السعر: <b><span class="en" data-price>7,500</span> <span data-currency>جنيه مصري</span></b></span>
+        <span>الدفع: <b>تحويل بنكي أو InstaPay</b></span>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="portrait">
+        <picture>
+          <source srcset="assets/img/amr-hero.webp" type="image/webp">
+          <img src="assets/img/amr-hero.jpg" width="760" height="845" alt="Amr Ghabbour، محاضر كورس تحليل البيانات" fetchpriority="high">
+        </picture>
+        <div class="cap"><b>Amr Ghabbour</b><span>Data Analyst · BI Specialist · Instructor</span></div>
+      </div>
+      <div class="float f1" aria-hidden="true"><div class="lbl">MODULES · LESSONS</div><div class="val">8 · 71</div></div>
+      <div class="float f2" aria-hidden="true"><div class="lbl">ONE COMPANY · 1M+ ROWS</div>
+        <div class="row"><i style="height:38%"></i><i style="height:52%"></i><i style="height:46%"></i><i style="height:70%"></i><i style="height:62%"></i><i style="height:88%"></i><i style="height:100%"></i></div></div>
+      <div class="float f3" aria-hidden="true">يبدأ <span data-start>15 ديسمبر 2026</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 2. THE PROBLEM ================= -->
+<section class="alt" id="problem" aria-labelledby="problem-title">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">المشكلة</span>
+      <h2 id="problem-title">لو حاسس إن واحدة من دول <span class="hl">بتوصفك</span>… إنت مش لوحدك.</h2>
+    </div>
+    <div class="grid g2">
+      <article class="card pain reveal"><span class="ic" aria-hidden="true">?</span><div><h3>عايز تغيّر مجالك ومش عارف تبدأ منين</h3><p>كورسات كتير، فيديوهات متفرقة، وكل واحد بيقولك ابدأ بأداة شكل. ومفيش ترتيب واضح يوصّلك من الصفر لشغل حقيقي.</p></div></article>
+      <article class="card pain reveal"><span class="ic" aria-hidden="true">?</span><div><h3>اتعلمت Excel… بس مش عارف تحلل بيه</h3><p>عارف الدوال، بس لما حد يديك شيت مبيعات ويسألك «الإيراد نزل ليه؟» مش عارف تمسك الخيط منين.</p></div></article>
+      <article class="card pain reveal"><span class="ic" aria-hidden="true">?</span><div><h3>عارف الأدوات بس مش فاهم البيزنس</h3><p>بتكتب Query أو تعمل Chart، بس مش متأكد ده الرقم اللي المدير محتاجه، ولا إيه القرار اللي المفروض يطلع منه.</p></div></article>
+      <article class="card pain reveal"><span class="ic" aria-hidden="true">?</span><div><h3>عايز تبقى Data Analyst ومعندكش خبرة عملية</h3><p>كل إعلان شغل بيطلب مشاريع وخبرة، وإنت معندكش حاجة تعرضها أو تتكلم عنها في الإنترفيو.</p></div></article>
+      <article class="card pain reveal" style="grid-column:1/-1"><span class="ic" aria-hidden="true">?</span><div><h3>عندك خبرة في مجالك… ومش عارف تحوّلها لمهارة تحليل</h3><p>فاهم شغل الحسابات أو الصيدلية أو المبيعات أو المخازن كويس جدًا، بس مش عارف إزاي الخبرة دي تبقى ميزة في تحليل البيانات بدل ما تحس إنك هتبدأ من الصفر.</p></div></article>
+    </div>
+    <p class="bridge reveal">الكورس ده متصمم عشان يحل ده بالظبط: <b>أدوات + فهم بيزنس + تطبيق عملي + متابعة</b>، بترتيب واضح من أول يوم لآخر يوم.</p>
+  </div>
+</section>
+
+<!-- ================= KEY MESSAGE: your field + data ================= -->
+<section id="your-field" aria-labelledby="field-title">
+  <div class="wrap">
+    <div class="field-hero">
+      <div class="reveal">
+        <span class="eyebrow">الرسالة الأهم</span>
+        <h2 id="field-title">مش لازم تسيب مجالك عشان تبقى <span class="hl">Data Analyst</span>.</h2>
+        <p class="lead">خبرتك في مجالك هي أكبر ميزة عندك. المحلل اللي فاهم البيزنس من جوّه بيسأل أسئلة أذكى، وبيفهم الرقم الغريب أسرع، وبيقدّم توصية الإدارة تقدر تنفذها. الكورس بيدّيك مهارات التحليل، وإنت بتضيف عليها خبرتك، فتبقى <b>Data Analyst في مجالك</b>.</p>
+      </div>
+      <div class="equation reveal" aria-label="خبرتك في المجال زائد مهارات التحليل يساوي Data Analyst في مجالك">
+        <div class="t">خبرتك في المجال<small>بتعرف البيزنس من جوّه</small></div>
+        <span class="op" aria-hidden="true">+</span>
+        <div class="t">مهارات التحليل<small>Excel · SQL · Power BI · Python</small></div>
+        <span class="op" aria-hidden="true">=</span>
+        <div class="t res">Data Analyst في مجالك<small style="color:#ffd9a0">ميزة حقيقية في سوق الشغل</small></div>
+      </div>
+    </div>
+    <div class="grid g3">
+      <article class="card ind reveal"><div class="top"><span class="ic" aria-hidden="true"><svg><use href="#i-calc"/></svg></span><h3>الحسابات والمالية<small>Accounting &amp; Finance</small></h3></div>
+        <p>هتتعلم تطابق أرقام المبيعات مع أرقام المالية، تقيس الربحية، وتحلل <b>الفعلي مقابل المستهدف</b> والانحراف بدل ما تجمّعه يدوي كل شهر.</p></article>
+      <article class="card ind reveal"><div class="top"><span class="ic" aria-hidden="true"><svg><use href="#i-pill"/></svg></span><h3>الصيدلة والرعاية الصحية<small>Pharmacy &amp; Healthcare</small></h3></div>
+        <p>نفس المهارات بتشتغل على بيانات مجالك: المبيعات حسب المنتج والفرع، المخزون، المرتجعات، و<b>داشبورد KPIs</b> تتابع بيه الأداء.</p></article>
+      <article class="card ind reveal"><div class="top"><span class="ic" aria-hidden="true"><svg><use href="#i-mega"/></svg></span><h3>المبيعات والتسويق<small>Sales &amp; Marketing</small></h3></div>
+        <p>أداء المندوبين مقابل التارجت، <b>تقسيم العملاء (RFM)</b>، الاحتفاظ بالعملاء، الـ Funnel، و A/B Testing عشان تعرف الحملة نجحت فعلًا ولا لأ.</p></article>
+      <article class="card ind reveal"><div class="top"><span class="ic" aria-hidden="true"><svg><use href="#i-truck"/></svg></span><h3>العمليات وسلاسل الإمداد<small>Operations &amp; Supply Chain</small></h3></div>
+        <p>مستوى الخدمة، المرتجعات وجودة المنتجات، والـ <b>Root Cause Analysis</b> لما رقم يتغير فجأة ومحتاج تعرف السبب.</p></article>
+      <article class="card ind reveal"><div class="top"><span class="ic" aria-hidden="true"><svg><use href="#i-box"/></svg></span><h3>المخازن وإدارة المخزون<small>Warehousing &amp; Inventory</small></h3></div>
+        <p>بيانات مخزون أسبوعي وأوامر شراء، وأحد مسارات مشروع التخرج عن <b>توفر المخزون والمبيعات الضايعة</b>.</p></article>
+      <article class="card ind reveal"><div class="top"><span class="ic" aria-hidden="true"><svg><use href="#i-brief"/></svg></span><h3>إدارة الأعمال<small>Business Administration</small></h3></div>
+        <p>تبني <b>KPI Dictionary</b> وداشبورد تنفيذي، وتكتب Business Brief من صفحة واحدة: لقيت إيه، ليه مهم، ونعمل إيه.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 3. THE SOLUTION / CURRICULUM ================= -->
+<section class="alt" id="curriculum" aria-labelledby="curr-title">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">الحل: رحلة تعلّم متكاملة</span>
+      <h2 id="curr-title">8 موديولات و 71 درس… <span class="hl">كل موديول بيبني على اللي قبله</span></h2>
+      <p class="lead">بنشتغل طول الكورس على بيانات شركة واحدة افتراضية متصممة تشبه شركة حقيقية: <span class="en">25</span> جدول مترابط، أكتر من <span class="en">1M</span> صف، و <span class="en">24</span> شهر بيانات. فبتشوف إزاي كل أداة بتكمّل اللي قبلها.</p>
+    </div>
+
+    <div class="toolbar reveal" aria-label="الأدوات والمهارات الأساسية">
+      <span class="chip en">Microsoft Excel</span><span class="chip en">Statistics</span><span class="chip en">SQL Server</span><span class="chip en">Power BI &amp; DAX</span>
+      <span class="chip en">Python</span><span class="chip en">AI Agents</span><span class="chip biz">Business Analytics</span><span class="chip biz">KPIs &amp; Performance Measurement</span>
+    </div>
+
+    <div class="phases reveal" aria-label="مراحل الرحلة">
+      <div class="phase p1"><span class="n en">PHASE 1</span><h3>الأساسيات</h3><div class="chips"><span class="chip en">Excel</span><span class="chip en">Statistics</span></div></div>
+      <div class="phase p2"><span class="n en">PHASE 2</span><h3>قواعد البيانات</h3><div class="chips"><span class="chip en">SQL I</span><span class="chip en">SQL II</span></div></div>
+      <div class="phase p3"><span class="n en">PHASE 3</span><h3>Business Intelligence</h3><div class="chips"><span class="chip en">Data Modeling</span><span class="chip en">Power BI</span></div></div>
+      <div class="phase p4"><span class="n en">PHASE 4</span><h3>تحليل متقدم وأتمتة</h3><div class="chips"><span class="chip en">Python</span><span class="chip en">AI Agents</span></div></div>
+    </div>
+
+    <div style="display:flex;justify-content:flex-end;margin-bottom:12px">
+      <button class="btn btn-ghost" id="toggle-all" type="button" aria-pressed="false" style="min-height:44px;font-size:15.5px;padding:8px 16px">افتح كل الموديولات</button>
+    </div>
+
+    <!-- ====== CURRICULUM ACCORDION: one <details> block per module. Copy a block to add a module. ====== -->
+    <div class="acc">
+
+      <details class="mod" open>
+        <summary><span class="num">01</span><span class="ttl"><b>Excel for Analysts</b><span>من ملف خام لتقرير KPI منظّم</span></span><span class="les">10 lessons</span><span class="chev" aria-hidden="true"><svg width="18" height="18"><use href="#i-chev"/></svg></span></summary>
+        <div class="body">
+          <div>
+            <h4>الموديول ده عن إيه؟</h4>
+            <p>تنظيم البيانات في Excel Tables، تنضيف البيانات، المعادلات اللي بتفرق، Lookups، Pivot Tables، Power Query، رسوم بيانية بتوصّل رسالة، وصفحة KPI. وبتبدأ فيه الـ KPI Dictionary اللي هيكمل معاك لآخر الكورس.</p>
+            <h4>هتطلع منه قادر على</h4>
+            <ul><li>تنضّف ملف فوضوي وتوثّق كل تعديل</li><li>تستخدم SUMIFS و XLOOKUP و PivotTables بثقة</li><li>تعمل صفحة KPI: Actual vs Target والانحراف</li></ul>
+            <h4>الأدوات</h4>
+            <div class="chips"><span class="chip en">Excel</span><span class="chip en">Power Query</span><span class="chip en">PivotTables</span><span class="chip en">XLOOKUP</span></div>
+          </div>
+          <div>
+            <h4>الدروس</h4>
+            <ul class="topics"><li>Analyst Workflow in Excel</li><li>Data Cleaning I: Structure, Duplicates, Dates</li><li>Data Cleaning II: Blanks, Validation, Logic Checks</li><li>Formulas That Matter: SUMIFS, IF/IFS</li><li>Lookups: XLOOKUP, INDEX/MATCH</li><li>Pivot Tables</li><li>Power Query Basics</li><li>Charts That Communicate</li><li>KPI Sheet: Actual vs Target</li><li>Wrap-up &amp; Mini-project 1</li></ul>
+          </div>
+          <div class="proj"><b>مشروع الموديول:</b> Workbook نظيف + ملخص KPI شهري لمدير المبيعات</div>
+        </div>
+      </details>
+
+      <details class="mod">
+        <summary><span class="num">02</span><span class="ttl"><b>Statistics for Business</b><span>تقرأ الأرقام صح قبل ما تحكم</span></span><span class="les">8 lessons</span><span class="chev" aria-hidden="true"><svg width="18" height="18"><use href="#i-chev"/></svg></span></summary>
+        <div class="body">
+          <div>
+            <h4>الموديول ده عن إيه؟</h4>
+            <p>وصف البيانات والتوزيعات، القيم الشاذة، Correlation vs Causation، العينات وفترات الثقة، Hypothesis Testing و A/B Testing، وإزاي تكتب النتيجة بأمانة. ده الحكم الإحصائي اللي هتستخدمه بعد كده في SQL و Power BI و Python.</p>
+            <h4>هتطلع منه قادر على</h4>
+            <ul><li>تختار Median ولا Mean، وتعرف إمتى ده يفرق</li><li>تقرأ p-value وتفرّق بين فرق حقيقي وفرق مهم للبيزنس</li><li>تقيّم A/B Test وتكتشف أخطاءه</li></ul>
+            <h4>الأدوات</h4>
+            <div class="chips"><span class="chip en">Excel</span><span class="chip en">Data Analysis ToolPak</span></div>
+          </div>
+          <div>
+            <h4>الدروس</h4>
+            <ul class="topics"><li>Why Statistics for Analysts</li><li>Describing Data</li><li>Distributions</li><li>Correlation vs Causation</li><li>Sampling &amp; Uncertainty</li><li>Hypothesis Testing</li><li>A/B Testing</li><li>Writing Results Honestly</li></ul>
+          </div>
+          <div class="proj"><b>مشروع الموديول:</b> تقرير صفحة واحدة: نطلق الـ Landing Page الجديدة ولا لأ؟</div>
+        </div>
+      </details>
+
+      <details class="mod">
+        <summary><span class="num">03</span><span class="ttl"><b>SQL I: Foundations</b><span>تتكلم مع قاعدة البيانات مباشرة</span></span><span class="les">9 lessons</span><span class="chev" aria-hidden="true"><svg width="18" height="18"><use href="#i-chev"/></svg></span></summary>
+        <div class="body">
+          <div>
+            <h4>الموديول ده عن إيه؟</h4>
+            <p>تحميل قاعدة بيانات في SQL Server وتعريف الـ Keys، أنواع تصميم قواعد البيانات (OLTP/OLAP و Star/Snowflake)، SELECT و WHERE و GROUP BY، الـ JOINs، ودوال التاريخ والنصوص. بتنقل من ملفات Excel لقاعدة بيانات حقيقية فيها 25 جدول، وفيه كمان 30 تمرين سريع بتقييم.</p>
+            <h4>هتطلع منه قادر على</h4>
+            <ul><li>تكتب Queries بتجاوب أسئلة بيزنس حقيقية</li><li>تتأكد إن الـ JOIN ما كررش صفوف ولا ضخّم الأرقام</li><li>تحلل سبب انخفاض الإيراد (Orders × AOV)</li></ul>
+            <h4>الأدوات</h4>
+            <div class="chips"><span class="chip en">SQL Server</span><span class="chip en">SSMS</span><span class="chip en">T-SQL</span></div>
+          </div>
+          <div>
+            <h4>الدروس</h4>
+            <ul class="topics"><li>Databases &amp; Setup</li><li>Schema Types: OLTP vs OLAP, Star/Snowflake</li><li>SELECT Basics</li><li>Filtering</li><li>Aggregation: GROUP BY &amp; HAVING</li><li>Joins I: INNER &amp; LEFT JOIN</li><li>Joins II: Grain &amp; Double Counting</li><li>Dates &amp; Text: MoM and YoY</li><li>Practice Lab + Root Cause Analysis</li></ul>
+          </div>
+          <div class="proj"><b>مشروع الموديول:</b> 10 أسئلة من الـ CEO بـ SQL + ملاحظة Root Cause</div>
+        </div>
+      </details>
+
+      <details class="mod">
+        <summary><span class="num">04</span><span class="ttl"><b>SQL II: Analytical SQL</b><span>تحليلات متقدمة باستعلامات</span></span><span class="les">8 lessons</span><span class="chev" aria-hidden="true"><svg width="18" height="18"><use href="#i-chev"/></svg></span></summary>
+        <div class="body">
+          <div>
+            <h4>الموديول ده عن إيه؟</h4>
+            <p>Subqueries و CTEs، Window Functions (ترتيب، مجاميع تراكمية، متوسطات متحركة)، Cohort Analysis، Funnel Analysis، RFM Segmentation، تحسين أداء الاستعلام، وتدريب على أسئلة المقابلات. بتحوّل SQL من أداة استعلام لأداة تحليل.</p>
+            <h4>هتطلع منه قادر على</h4>
+            <ul><li>تبني Retention Matrix وتقرأها</li><li>تحدد العملاء بيسيبوا الموقع في أنهي خطوة</li><li>تقسّم العملاء بقواعد RFM واضحة</li></ul>
+            <h4>الأدوات</h4>
+            <div class="chips"><span class="chip en">T-SQL</span><span class="chip en">CTEs</span><span class="chip en">Window Functions</span></div>
+          </div>
+          <div>
+            <h4>الدروس</h4>
+            <ul class="topics"><li>Subqueries &amp; CTEs</li><li>Window Functions I: Ranking &amp; Shares</li><li>Window Functions II: LAG/LEAD, Running Totals, Moving Averages</li><li>Cohort Analysis</li><li>Funnel Analysis</li><li>RFM Segmentation</li><li>Query Quality: Plans, Indexes, Testing</li><li>Interview Drills + Mini-project 4</li></ul>
+          </div>
+          <div class="proj"><b>مشروع الموديول:</b> حزمة Funnel + Cohort + RFM: مراجعة لصحة قاعدة العملاء</div>
+        </div>
+      </details>
+
+      <details class="mod">
+        <summary><span class="num">05</span><span class="ttl"><b>Data Modeling &amp; Power Query</b><span>نموذج بيانات بيطلّع أرقام صح</span></span><span class="les">8 lessons</span><span class="chev" aria-hidden="true"><svg width="18" height="18"><use href="#i-chev"/></svg></span></summary>
+        <div class="body">
+          <div>
+            <h4>الموديول ده عن إيه؟</h4>
+            <p>ليه التقارير بتطلع أرقام غلط، تصميم Star Schema، Power Query (Merge و Append و Unpivot و Parameters)، Date Table والعلاقات، فحص جودة البيانات، وتحسين حجم وأداء الموديل. ده الجسر بين قاعدة البيانات والداشبورد.</p>
+            <h4>هتطلع منه قادر على</h4>
+            <ul><li>تصمم موديل بـ Facts و Dimensions</li><li>تستورد من SQL Server و Excel و CSV وتجهّزها</li><li>تثبت إن الموديل مطابق لأرقام المالية</li></ul>
+            <h4>الأدوات</h4>
+            <div class="chips"><span class="chip en">Power BI Desktop</span><span class="chip en">Power Query</span></div>
+          </div>
+          <div>
+            <h4>الدروس</h4>
+            <ul class="topics"><li>Why Modeling Matters</li><li>Star Schema</li><li>Power Query I: Connect, Profile, Shape</li><li>Power Query II: Append, Merge, Unpivot, Parameters</li><li>Date Table &amp; Relationships</li><li>Data Quality Checks: Match Finance</li><li>Performance &amp; Structure</li><li>Wrap-up: Document &amp; Hand Over the Model</li></ul>
+          </div>
+          <div class="proj"><b>مشروع الموديول:</b> موديل نظيف وموثّق + إثبات مطابقة الأرقام</div>
+        </div>
+      </details>
+
+      <details class="mod">
+        <summary><span class="num">06</span><span class="ttl"><b>Power BI &amp; DAX</b><span>داشبورد بيدعم القرار</span></span><span class="les">10 lessons</span><span class="chev" aria-hidden="true"><svg width="18" height="18"><use href="#i-chev"/></svg></span></summary>
+        <div class="body">
+          <div>
+            <h4>الموديول ده عن إيه؟</h4>
+            <p>بناء التقارير، مبادئ التصميم البصري، DAX (Measures و CALCULATE و Time Intelligence)، Actual vs Target وتحليل الانحراف، التفاعل (Drill-through و Bookmarks)، Row-Level Security، والنشر والتحديث المجدول. هنا بتطلّع كل اللي فات في شكل داشبورد تنفيذي.</p>
+            <h4>هتطلع منه قادر على</h4>
+            <ul><li>تكتب Measures صح لـ YoY و MoM و YTD</li><li>تحلل ليه مندوب أو فرع متأخر عن التارجت</li><li>تنشر تقرير بصلاحيات لكل فرع وتحديث تلقائي</li></ul>
+            <h4>الأدوات</h4>
+            <div class="chips"><span class="chip en">Power BI</span><span class="chip en">DAX</span><span class="chip en">Power BI Service</span></div>
+          </div>
+          <div>
+            <h4>الدروس</h4>
+            <ul class="topics"><li>Power BI Tour: First Report Page</li><li>Visual Design Principles</li><li>DAX Fundamentals: Core Revenue Measures</li><li>CALCULATE &amp; Filter Context</li><li>Time Intelligence: YoY, MoM, YTD</li><li>Actual vs Target KPIs + Variance</li><li>Interactivity: Drill-through, Tooltips, Bookmarks</li><li>Row-Level Security</li><li>Publishing, Sharing &amp; Scheduled Refresh</li><li>Wrap-up: Tell the Story, Deliver the Board Pack</li></ul>
+          </div>
+          <div class="proj"><b>مشروع الموديول:</b> داشبورد تنفيذي من 4 صفحات: نظرة عامة، العملاء، المنتجات، المندوبين والتارجت</div>
+        </div>
+      </details>
+
+      <details class="mod">
+        <summary><span class="num">07</span><span class="ttl"><b>Python for Analysts</b><span>تحليل بالكود يتعاد في أي وقت</span></span><span class="les">10 lessons</span><span class="chev" aria-hidden="true"><svg width="18" height="18"><use href="#i-chev"/></svg></span></summary>
+        <div class="body">
+          <div>
+            <h4>الموديول ده عن إيه؟</h4>
+            <p>أساسيات Python في VS Code و Jupyter Notebooks، pandas للتنضيف والتجميع والدمج، الرسوم البيانية، EDA منظّم، ربط SQL مع Python، و Trends و Seasonality و Forecasting مع اختبارات إحصائية. بيبدأ Python من الأساس.</p>
+            <h4>هتطلع منه قادر على</h4>
+            <ul><li>تنضّف وتحلل بيانات بـ pandas بخطوات قابلة للتكرار</li><li>تسحب بيانات من SQL Server وتحللها في Notebook</li><li>تعمل Forecast بسيط وتقيس خطأه (MAPE)</li></ul>
+            <h4>الأدوات</h4>
+            <div class="chips"><span class="chip en">Python</span><span class="chip en">VS Code</span><span class="chip en">pandas</span><span class="chip en">matplotlib</span><span class="chip en">seaborn</span><span class="chip en">scipy</span></div>
+          </div>
+          <div>
+            <h4>الدروس</h4>
+            <ul class="topics"><li>Setup &amp; Python Basics: First Notebook</li><li>Control Flow &amp; Functions</li><li>pandas I: Load, Inspect, Filter, Sort</li><li>pandas II: groupby, merge, pivot_table, Dates</li><li>Data Cleaning in pandas</li><li>Visualization: matplotlib &amp; seaborn</li><li>Exploratory Data Analysis: Customers &amp; NPS</li><li>SQL + Python Together</li><li>Trends, Seasonality &amp; Forecasting</li><li>Wrap-up: Reproducible Notebook + Outlook Memo</li></ul>
+          </div>
+          <div class="proj"><b>مشروع الموديول:</b> Notebook فيه EDA + Forecast + مذكرة للإدارة</div>
+        </div>
+      </details>
+
+      <details class="mod">
+        <summary><span class="num">08</span><span class="ttl"><b>AI Agents for Data Analysts</b><span>AI مساعد تحليل… تحت رقابتك</span></span><span class="les">8 lessons</span><span class="chev" aria-hidden="true"><svg width="18" height="18"><use href="#i-chev"/></svg></span></summary>
+        <div class="body">
+          <div>
+            <h4>الموديول ده عن إيه؟</h4>
+            <p>إزاي الـ LLM بيشتغل وإمتى بيغلط، Prompting بسياق البيانات، كتابة SQL و DAX بمساعدة AI ومراجعتها، بناء Agent بـ Python بيستعلم من قاعدة البيانات، أتمتة تقرير KPI الشهري، والتقييم والحوكمة. بنستخدم نماذج AI مجانية بالكامل.</p>
+            <h4>هتطلع منه قادر على</h4>
+            <ul><li>تكتشف أخطاء الكود اللي الـ AI بيكتبه</li><li>تبني Agent بصلاحية قراءة فقط (Read-only) على قاعدة البيانات</li><li>تختبر دقة الـ Agent قبل ما تعتمد على أرقامه</li></ul>
+            <h4>الأدوات</h4>
+            <div class="chips"><span class="chip en">Python</span><span class="chip en">Free LLMs (Ollama)</span><span class="chip en">Tool Calling</span><span class="chip en">SQL Server</span></div>
+          </div>
+          <div>
+            <h4>الدروس</h4>
+            <ul class="topics"><li>AI Agents: Where They Help, Where They Fail</li><li>Prompting &amp; Context for Data Work</li><li>AI-Assisted SQL &amp; DAX: Review Hard</li><li>Your First Agent: Tool Calling &amp; Read-only SQL</li><li>Multi-Step Analysis Agent</li><li>Agentic Reporting: The Monthly KPI Pack</li><li>Evaluation, Guardrails &amp; Governance</li><li>Demo &amp; Defense + Mini-project 8</li></ul>
+          </div>
+          <div class="proj"><b>مشروع الموديول:</b> Analyst Agent + تقرير شهري مؤتمت + تقرير تقييم الدقة</div>
+        </div>
+      </details>
+
+    </div>
+
+    <div class="grad reveal">
+      <h3><span>مشروع التخرج</span> · Graduation / Portfolio Project</h3>
+      <p>شهر كامل بعد الموديولات. بتختار مسار واحد وتشتغل عليه من أوله لآخره بهدف واضح: <b>قرار واحد قيمته مليون جنيه على الأقل</b>. بتستخدم SQL للاستخراج والتحقق، Power BI للداشبورد، و Excel أو Python للتحليل، وبتسلّم ملف SQL، ملف Power BI، Notebook أو Workbook، مذكرة من صفحة واحدة، وعرض 5 دقايق وبعده مناقشة مباشرة.</p>
+      <div class="chips"><span class="chip">التسعير والخصومات</span><span class="chip">الاحتفاظ بالعملاء و RFM</span><span class="chip">الـ Web Funnel والعائد من التسويق</span><span class="chip">أداء المندوبين مقابل التارجت</span><span class="chip">المرتجعات وجودة المنتجات</span><span class="chip">توفر المخزون والمبيعات الضايعة (متقدم)</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 4. BUSINESS UNDERSTANDING ================= -->
+<section id="business" aria-labelledby="biz-title">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">مش مجرد أدوات</span>
+      <h2 id="biz-title">هتفهم إزاي <span class="hl">البيزنس بيستخدم البيانات</span> عشان ياخد قرار</h2>
+      <p class="lead">أي حد يقدر يتعلم يدوس على زرار في Power BI. الفرق الحقيقي إنك تعرف تسأل السؤال الصح، تختار الـ KPI الصح، وتوصل لسبب الرقم، وتقول للإدارة نعمل إيه.</p>
+    </div>
+    <div class="biz-wrap">
+      <div class="card dash reveal" role="img" aria-label="مثال توضيحي: تحليل سبب انخفاض الإيراد بتفكيكه لعدد الطلبات ضرب متوسط قيمة الطلب">
+        <div class="dh"><span>ROOT CAUSE · REVENUE</span><em>Illustrative numbers</em></div>
+        <div class="q"><small>المدير بيسأل:</small>«الإيراد نزل الشهر ده… ليه؟»</div>
+        <div class="kpis">
+          <div class="kpi"><div class="l">REVENUE</div><div class="v" style="color:var(--red)">−12%</div><div class="d">الإيراد</div></div>
+          <span class="op">=</span>
+          <div class="kpi"><div class="l">ORDERS</div><div class="v" style="color:var(--red)">−14%</div><div class="d">عدد الطلبات</div></div>
+          <span class="op">×</span>
+          <div class="kpi"><div class="l">AOV</div><div class="v" style="color:var(--green)">+2%</div><div class="d">متوسط قيمة الطلب</div></div>
+        </div>
+        <svg viewBox="0 0 520 150" width="100%" direction="ltr" style="margin-top:14px;display:block" aria-hidden="true">
+          <g font-family="Inter" font-size="11" fill="#6b819f">
+            <text x="0" y="12">ORDERS BY CHANNEL · ACTUAL vs TARGET</text>
+          </g>
+          <g>
+            <rect x="0"   y="40" width="70" height="90" rx="5" fill="#22d3ee" opacity=".9"/><rect x="0" y="34" width="70" height="3" fill="#f59e0b"/>
+            <rect x="105" y="58" width="70" height="72" rx="5" fill="#22d3ee" opacity=".9"/><rect x="105" y="50" width="70" height="3" fill="#f59e0b"/>
+            <rect x="210" y="92" width="70" height="38" rx="5" fill="#f87171"/><rect x="210" y="44" width="70" height="3" fill="#f59e0b"/>
+            <rect x="315" y="66" width="70" height="64" rx="5" fill="#22d3ee" opacity=".9"/><rect x="315" y="62" width="70" height="3" fill="#f59e0b"/>
+            <rect x="420" y="76" width="70" height="54" rx="5" fill="#22d3ee" opacity=".9"/><rect x="420" y="70" width="70" height="3" fill="#f59e0b"/>
+          </g>
+          <g font-family="Inter" font-size="11.5" fill="#9fb1ca" text-anchor="middle">
+            <text x="35" y="146">Branch</text><text x="140" y="146">Reps</text><text x="245" y="146" fill="#f87171" font-weight="700">Web</text><text x="350" y="146">Calls</text><text x="455" y="146">Market</text>
+          </g>
+        </svg>
+        <div class="why">
+          <div><b>FINDING</b>النزول كله تقريبًا من عدد طلبات الموقع</div>
+          <div><b>ROOT CAUSE</b>فين بالظبط في الـ Funnel الناس بتقف؟</div>
+          <div class="rec" style="grid-column:1/-1"><b>RECOMMENDATION</b>توصية محددة بالأرقام، وبالمخاطرة اللي ممكن تحصل</div>
+        </div>
+        <p class="src">مثال توضيحي لطريقة التفكير اللي بتتعلمها (الأرقام للشرح فقط). نفس النوع ده من الأسئلة موجود في مشروع موديول SQL I.</p>
+      </div>
+
+      <div class="concepts">
+        <div class="concept reveal"><b>KPIs ومؤشرات الأداء</b><span>تختار المؤشر الصح، تعرّفه في KPI Dictionary، وتقيسه بنفس الطريقة في كل أداة.</span><em>Business KPIs</em></div>
+        <div class="concept reveal"><b>الإيراد والربحية</b><span>تفكك الإيراد لـ Orders × AOV، وتقيس الربح، وتطابق أرقامك مع المالية.</span><em>Revenue &amp; Profitability</em></div>
+        <div class="concept reveal"><b>تقسيم العملاء</b><span>RFM Segmentation: أنهي عملاء المبيعات تكلمهم الأول؟</span><em>Customer Segmentation</em></div>
+        <div class="concept reveal"><b>الاحتفاظ بالعملاء</b><span>Cohort Analysis و Retention Matrix: العملاء الجداد بيرجعوا يشتروا تاني؟</span><em>Retention &amp; Churn</em></div>
+        <div class="concept reveal"><b>أداء المبيعات</b><span>Actual vs Target وتحليل الانحراف: مين متأخر عن التارجت، وليه؟</span><em>Sales Performance</em></div>
+        <div class="concept reveal"><b>كفاءة العمليات</b><span>مستوى الخدمة، المرتجعات، والـ Funnel: فين الشغل بيقف أو بيضيع؟</span><em>Operational Efficiency</em></div>
+        <div class="concept reveal"><b>التحليل الإحصائي</b><span>Hypothesis Testing و A/B Testing: الفرق ده حقيقي ولا صدفة؟</span><em>Statistical Analysis</em></div>
+        <div class="concept reveal"><b>متابعة الأداء</b><span>داشبورد تنفيذي وتقرير KPI شهري، يدوي وبعدين مؤتمت.</span><em>Performance Monitoring</em></div>
+        <div class="concept reveal" style="grid-column:1/-1;border-color:rgba(245,158,11,.5)"><b>تحليل السبب الجذري</b><span>لما رقم يتغير، توصل لسببه الحقيقي بالأرقام، وتكتبه في Business Brief: الموقف، اللي لقيته، السبب، التوصية، والمخاطرة.</span><em>Root Cause Analysis</em></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 5. PRACTICAL PROJECTS ================= -->
+<section class="alt" id="projects" aria-labelledby="proj-title">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">تطبيق عملي</span>
+      <h2 id="proj-title">هتتعلم بإيدك… <span class="hl">مش بالفرجة</span></h2>
+      <p class="lead">كل درس بيمشي في نفس الدورة، وكل موديول بيتقفل بـ Mini-project بإطار بيزنس حقيقي، وفي الآخر مشروع تخرج بيجمع كل الأدوات.</p>
+    </div>
+
+    <div class="cycle reveal">
+      <div class="cyc"><span class="en">LEARN</span><b>اتعلّم</b><span>في الـ Live Session</span></div>
+      <div class="cyc"><span class="en">PRACTICE</span><b>اتمرّن</b><span>تمارين على بيانات الشركة</span></div>
+      <div class="cyc"><span class="en">APPLY</span><b>طبّق لوحدك</b><span>واجب أسبوعي ومهام مستقلة</span></div>
+      <div class="cyc fb"><span class="en">FEEDBACK</span><b>خد Feedback</b><span>مراجعة وتصحيح لشغلك</span></div>
+    </div>
+
+    <div class="levels">
+      <div class="lvl l1 reveal"><h3>تمرين موجّه<small>Guided Exercise</small></h3><p>بتعيد نفس خطوات الشرح بإيدك، والحل متاح عشان تراجع نفسك.</p></div>
+      <div class="lvl l2 reveal"><h3>مهمة مستقلة<small>Independent Task</small></h3><p>نفس المهارة على سؤال مختلف، وإجابتك بتتراجع على مفتاح إجابات.</p></div>
+      <div class="lvl l3 reveal"><h3>تحدي بيزنس<small>Business Challenge</small></h3><p>«المدير بيسأل…» من غير ما نقولك الطريقة. إنت اللي بتختار التحليل.</p></div>
+    </div>
+
+    <h3 style="font-size:22px;font-weight:900;margin:0 0 14px">8 Mini-projects، واحد في آخر كل موديول</h3>
+    <div class="projects">
+      <div class="pj reveal"><div class="m">01 · EXCEL</div><p>Workbook نظيف + ملخص KPI لمدير المبيعات</p></div>
+      <div class="pj reveal"><div class="m">02 · STATISTICS</div><p>تقرير A/B Test: نطلق الـ Landing Page الجديدة ولا لأ؟</p></div>
+      <div class="pj reveal"><div class="m">03 · SQL I</div><p>10 أسئلة من الـ CEO + تحليل سبب الانخفاض</p></div>
+      <div class="pj reveal"><div class="m">04 · SQL II</div><p>Funnel + Cohort + RFM: مراجعة صحة قاعدة العملاء</p></div>
+      <div class="pj reveal"><div class="m">05 · MODELING</div><p>موديل موثّق + إثبات مطابقة الأرقام مع المالية</p></div>
+      <div class="pj reveal"><div class="m">06 · POWER BI</div><p>داشبورد تنفيذي من 4 صفحات للإدارة العليا</p></div>
+      <div class="pj reveal"><div class="m">07 · PYTHON</div><p>Notebook فيه EDA و Forecast + مذكرة للإدارة</p></div>
+      <div class="pj reveal"><div class="m">08 · AI AGENTS</div><p>Analyst Agent + تقرير شهري مؤتمت + تقييم دقته</p></div>
+    </div>
+
+    <h3 style="font-size:22px;font-weight:900;margin:34px 0 6px">في الآخر، معاك Portfolio تقدر تعرضه وتدافع عنه</h3>
+    <p style="color:var(--muted);font-weight:600;margin:0">ملفات حقيقية من شغلك إنت، على سيناريوهات بيزنس واقعية، تقدر تشرحها في أي إنترفيو.</p>
+    <div class="portfolio">
+      <div class="pf reveal"><div class="ic en">.sql</div><b>استعلامات SQL تحليلية</b></div>
+      <div class="pf reveal"><div class="ic en">.pbix</div><b>داشبوردات Power BI</b></div>
+      <div class="pf reveal"><div class="ic en">.ipynb · .xlsx</div><b>Notebooks و Workbooks</b></div>
+      <div class="pf reveal"><div class="ic en">memo · deck</div><b>مذكرات وعروض للإدارة</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 6. SUPPORT (strong emphasis) ================= -->
+<section class="support" id="support" aria-labelledby="sup-title">
+  <div class="wrap">
+    <div class="panel">
+      <div class="sec-head center reveal">
+        <span class="eyebrow">مش هتتعلم لوحدك</span>
+        <h2 id="sup-title">متابعة شخصية <span class="hl">من أول يوم لحد بعد الكورس</span></h2>
+        <p class="lead">ده مش كورس فيديوهات وخلاص. فيه حد بيتابع شغلك، بيصحّحه، وبيقولك إنت فين وتحتاج تركز على إيه.</p>
+      </div>
+      <div class="grid g2">
+        <article class="sup key reveal"><span class="ic" aria-hidden="true"><svg><use href="#i-user"/></svg></span><div><h3>متابعة فردية كل أسبوع</h3><p>مش رقم وسط مجموعة. كل أسبوع فيه متابعة ليك إنت: وصلت لفين، إيه اللي واقف معاك، وإيه الخطوة الجاية. وده بيخلّيك ماشي في الكورس بانتظام وما تتأخرش.</p></div></article>
+        <article class="sup key reveal"><span class="ic" aria-hidden="true"><svg><use href="#i-check"/></svg></span><div><h3>مراجعة وتصحيح الواجبات</h3><p>شغلك بيتراجع ويتصحّح، مش بس بيتسلّم. لما تعرف غلطت فين وليه، بتصلّحه بنفسك، والغلطة دي ما بتتكررش في الشغل الحقيقي.</p></div></article>
+        <article class="sup reveal"><span class="ic" aria-hidden="true"><svg><use href="#i-trend"/></svg></span><div><h3>Feedback على مستواك</h3><p>كل Mini-project بيتقيّم بمعايير معلنة (Rubric): «ناجح» أو «محتاج تعديل» مع Feedback واضح. فبتعرف نقط قوتك والحاجات اللي محتاج تشتغل عليها.</p></div></article>
+        <article class="sup reveal"><span class="ic" aria-hidden="true"><svg><use href="#i-live"/></svg></span><div><h3>Live Sessions</h3><p>مرتين في الأسبوع، 3 ساعات كل مرة: شرح، تطبيق، أسئلة، ومراجعة شغلك. تسأل وقت ما تقف، وتاخد إجابة على طول بدل ما تدوّر لوحدك.</p></div></article>
+        <article class="sup reveal"><span class="ic" aria-hidden="true"><svg><use href="#i-rec"/></svg></span><div><h3>كل Session متسجّلة</h3><p>كل جلسة بتتسجّل وتترفع على Google Drive. لو فاتتك Session أو عايز تراجع جزء معيّن، ترجعله في أي وقت.</p></div></article>
+        <article class="sup reveal"><span class="ic" aria-hidden="true"><svg><use href="#i-mic"/></svg></span><div><h3>Mock Interview بعد الكورس</h3><p>إنترفيو تجريبي بعد ما تخلّص، عشان تتدرب تشرح مشاريعك وتجاوب أسئلة تقنية قبل الإنترفيو الحقيقي، وتاخد Feedback على أدائك.</p></div></article>
+        <article class="sup reveal" style="grid-column:1/-1"><span class="ic" aria-hidden="true"><svg><use href="#i-folder"/></svg></span><div><h3>بناء Portfolio عملي</h3><p>8 Mini-projects ومشروع تخرج على سيناريوهات بيزنس واقعية، كلهم ملفات حقيقية من شغلك: SQL و Power BI و Notebooks ومذكرات للإدارة. ده اللي هتعرضه وتتكلم عنه لما حد يسألك «اشتغلت على إيه؟».</p></div></article>
+      </div>
+      <div class="sched reveal">
+        <span class="chip">مرتين في الأسبوع × 3 ساعات</span>
+        <span class="chip">5 شهور للموديولات</span>
+        <span class="chip">+ شهر لمشروع التخرج</span>
+        <span class="chip">دليل PDF لكل درس</span>
+        <span class="chip">Cheat Sheet لكل موديول</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 7. WHO IS THIS FOR ================= -->
+<section id="audience" aria-labelledby="aud-title">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">لمين الكورس؟</span>
+      <h2 id="aud-title">مش محتاج خبرة سابقة… <span class="hl">محتاج التزام</span></h2>
+      <p class="lead">الكورس بيبدأ من الأساس وبيوصل لمستوى متقدم، فمناسب لأكتر من نقطة بداية.</p>
+    </div>
+    <div class="grid g3">
+      <article class="card aud reveal"><h3>مبتدئ تمامًا</h3><p>معندكش أي خلفية تقنية؟ هتبدأ من Excel خطوة بخطوة، وكل أداة جديدة بتتشرح من أولها.</p></article>
+      <article class="card aud reveal"><h3>خريج جديد</h3><p>عايز مهارات عملية تفرق في أول شغل، ومشاريع حقيقية تحطها في الـ CV وتتكلم عنها في الإنترفيو.</p></article>
+      <article class="card aud reveal"><h3>عايز تغيّر مجالك</h3><p>شغال في مجال تاني وعايز تنقل لـ Data Analytics؟ مسار كامل من Excel لحد Python و AI Agents.</p></article>
+      <article class="card aud reveal"><h3>موظف عايز يطوّر نفسه</h3><p>بتعمل تقارير أو بتتعامل مع أرقام؟ هتشتغل أسرع، تطلّع Insights أعمق، وتأتمت التقارير المتكررة.</p></article>
+      <article class="card aud reveal"><h3>جاي من خلفية مش تقنية</h3><p>حسابات، صيدلة، مبيعات، مخازن، أو إدارة؟ SQL بيبدأ من الصفر، و Python من الأساس في الموديول السابع، وخبرتك في مجالك ميزة.</p></article>
+      <article class="card aud reveal"><h3>عايز تبقى Analyst في مجالك</h3><p>مش لازم تسيب مجالك. خبرتك + مهارات التحليل = قيمة أعلى في نفس المجال اللي إنت فاهمه.</p></article>
+    </div>
+    <div class="need">
+      <div class="box ok reveal"><h3>المطلوب منك</h3><p>تكون مرتاح في استخدام الكمبيوتر، تلتزم بالـ Sessions، وتخصص وقت إضافي كل أسبوع للتمرين والواجب. ولابتوب Windows عليه Excel 2021 أو أحدث (باقي البرامج مجانية).</p></div>
+      <div class="box no reveal"><h3>بصراحة: مش مناسب لو…</h3><p>بتدوّر على شرح نظري من غير تطبيق، أو مش هتقدر تخصص وقت تمرين كل أسبوع. التعلّم هنا معتمد على إنك تشتغل بإيدك. والكورس بيبني المهارات، لكنه ما بيوعدش بوظيفة.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 8. INSTRUCTOR ================= -->
+<section class="alt" id="instructor" aria-labelledby="inst-title">
+  <div class="wrap inst">
+    <div class="photo reveal">
+      <picture>
+        <source srcset="assets/img/amr-about.webp" type="image/webp">
+        <img src="assets/img/amr-about.jpg" width="520" height="825" alt="صورة Amr Ghabbour" loading="lazy">
+      </picture>
+    </div>
+    <div class="reveal">
+      <span class="eyebrow">عن المحاضر</span>
+      <h2 id="inst-title" class="name">Amr Ghabbour</h2>
+      <p class="role">Data Analyst | BI Specialist | Instructor</p>
+      <div class="xp"><b class="en">5</b><span>سنين خبرة في <span class="en">Data Analytics</span></span></div>
+      <p>أنا عمرو، Data Analyst ومتخصص Business Intelligence ومحاضر تحليل بيانات، عندي <b style="color:var(--ink)">5 سنين خبرة في Data Analytics</b>. شغلي بيجمع بين الجانب التقني في التحليل وفهم البيزنس اللي وراه: إزاي تحوّل البيانات لإجابة، والإجابة لقرار.</p>
+      <p>صممت الكورس ده بنفس الطريقة: مش شرح أدوات منفصلة، لكن رحلة واحدة على بيانات شركة متكاملة، كل أداة فيها بتخدم سؤال بيزنس، وكل رقم لازم يطلع صح ويتطابق في كل أداة. ومعاك طول الرحلة بمتابعة ومراجعة لشغلك.</p>
+      <div class="pillars">
+        <div><b>تقنية</b><span>Excel و SQL و Power BI و Python بالطريقة اللي بتتطلب في الشغل.</span></div>
+        <div><b>بيزنس</b><span>KPIs، Root Cause، وتوصيات الإدارة تقدر تنفذها.</span></div>
+        <div><b>متابعة</b><span>مراجعة لشغلك و Feedback لحد آخر الكورس.</span></div>
+      </div>
+      <div style="margin-top:24px"><a class="btn btn-primary" data-wa="instructor" href="https://wa.me/96569651179" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true"><use href="#i-wa"/></svg>اسألني على WhatsApp</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 9. PRICING ================= -->
+<section id="pricing" aria-labelledby="price-title">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">السعر والتسجيل</span>
+      <h2 id="price-title">استثمار واحد… <span class="hl">ورحلة كاملة</span></h2>
+    </div>
+    <div class="price-wrap">
+      <div class="price reveal">
+        <span class="tag">الكورس كامل · 8 موديولات + مشروع التخرج</span>
+        <div class="amount"><b data-price>7,500</b><span data-currency>جنيه مصري</span></div>
+        <div class="start">البداية: <b data-start>15 ديسمبر 2026</b></div>
+        <ul class="incl">
+          <li>8 موديولات و 71 درس: Excel، Statistics، SQL، Data Modeling، Power BI، Python، AI Agents</li>
+          <li>Live Sessions مرتين في الأسبوع، 3 ساعات كل مرة، لمدة 5 شهور</li>
+          <li>كل Session بتتسجّل وتترفع على Google Drive</li>
+          <li>متابعة فردية أسبوعية، ومراجعة وتصحيح الواجبات، و Feedback على مستواك</li>
+          <li>دليل PDF لكل درس، ملفات تمرين، و Cheat Sheet لكل موديول</li>
+          <li>8 Mini-projects + مشروع تخرج (شهر) = Portfolio عملي</li>
+          <li>Mock Interview بعد الكورس</li>
+          <li>شهادة إتمام (<span class="en">Certificate of Completion</span>)</li>
+        </ul>
+        <a class="btn btn-primary btn-lg" data-wa="pricing" href="https://wa.me/96569651179" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true"><use href="#i-wa"/></svg>احجز مكانك الآن على WhatsApp</a>
+      </div>
+      <div class="pay reveal">
+        <h3>طرق الدفع</h3>
+        <div class="pm"><span class="ic" aria-hidden="true"><svg><use href="#i-bank"/></svg></span><div><b>تحويل بنكي</b><span>Bank Transfer</span></div></div>
+        <div class="pm"><span class="ic" aria-hidden="true"><svg><use href="#i-phone"/></svg></span><div><b>InstaPay</b><span>تحويل فوري من الموبايل</span></div></div>
+        <h3 style="margin-top:8px">التسجيل في 3 خطوات</h3>
+        <ol class="steps">
+          <li>ابعت رسالة على WhatsApp (الرسالة مكتوبة جاهزة).</li>
+          <li>هتعرف تفاصيل التسجيل وبيانات الدفع.</li>
+          <li>ادفع بالتحويل البنكي أو InstaPay، ومكانك بيتأكد.</li>
+        </ol>
+        <p style="margin:0;color:var(--muted);font-size:14.5px;font-weight:600">نصيحة: اكتب في رسالتك إنت فين دلوقتي وعايز توصل لفين، عشان نقولك بصراحة الكورس هيفيدك إزاي.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 10. FAQ ================= -->
+<section class="alt" id="faq" aria-labelledby="faq-title">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">أسئلة شائعة</span>
+      <h2 id="faq-title">عندك سؤال؟ <span class="hl">غالبًا إجابته هنا</span></h2>
+    </div>
+    <div class="faq">
+      <details><summary>محتاج خبرة سابقة في البرمجة؟</summary><div class="a"><p>لا. SQL بيبدأ من الصفر في الموديول التالت، و Python بيبدأ من الأساس في الموديول السابع، بعد ما يكون عندك تفكير تحليلي قوي.</p></div></details>
+      <details><summary>ينفع أشترك لو معنديش أي خلفية تقنية؟</summary><div class="a"><p>أيوه. الكورس بيبدأ من Excel من الأساس، وكل أداة جديدة بتتشرح من أولها. المطلوب إنك تكون مرتاح في استخدام الكمبيوتر ومستعد تتمرّن بإيدك.</p></div></details>
+      <details><summary>ينفع أذاكر وأنا شغال؟</summary><div class="a"><p>الكورس مرتين في الأسبوع، 3 ساعات كل مرة، وكل Session بتتسجّل لو اضطريت تفوّت واحدة. بس خلّي في بالك إنك محتاج وقت إضافي كل أسبوع للتمرين والواجب. ولمواعيد الـ Sessions بالظبط ابعت على WhatsApp.</p></div></details>
+      <details><summary>هشتغل على مشاريع عملية؟</summary><div class="a"><p>أيوه. كل موديول بيتقفل بـ Mini-project بإطار بيزنس حقيقي (8 مشاريع)، وفي الآخر مشروع تخرج لمدة شهر. وبتشتغل على شركة افتراضية متصممة تشبه شركة حقيقية: 24 شهر بيانات و 25 جدول. البيانات مش بيانات شركة حقيقية.</p></div></details>
+      <details><summary>هاخد Feedback فردي على شغلي؟</summary><div class="a"><p>أيوه. فيه متابعة فردية كل أسبوع، والواجبات بتتراجع وتتصحّح، وكل Mini-project بيتقيّم بـ Rubric («ناجح» أو «محتاج تعديل») مع Feedback واضح.</p></div></details>
+      <details><summary>الـ Sessions بتتسجّل؟</summary><div class="a"><p>أيوه. كل Session بتتسجّل وتترفع على Google Drive، فتقدر ترجعلها في أي وقت.</p></div></details>
+      <details><summary>هطلع بـ Portfolio؟</summary><div class="a"><p>أيوه. الـ 8 Mini-projects ومشروع التخرج بيطلّعوا ملفات حقيقية: SQL و Power BI و Notebooks أو Workbooks ومذكرات للإدارة، تقدر تعرضها وتشرحها.</p></div></details>
+      <details><summary>فيه Mock Interview؟</summary><div class="a"><p>أيوه، فيه Mock Interview بعد ما تخلّص الكورس، عشان تتدرب تشرح مشاريعك وتجاوب أسئلة تقنية. وموديول SQL II كمان فيه تدريب على أسئلة المقابلات.</p></div></details>
+      <details><summary>هتعلم أنهي أدوات؟</summary><div class="a"><p>Excel و Power Query، الإحصاء في Excel، SQL Server (T-SQL)، Power BI و DAX، Python (pandas و matplotlib و seaborn و scipy)، وبناء AI Agents بـ Python بنماذج AI مجانية.</p></div></details>
+      <details><summary>فيه برامج لازم أدفع فيها؟</summary><div class="a"><p>أغلب الأدوات مجانية. Excel محتاج ترخيص. النشر والتحديث المجدول في Power BI Service محتاج ترخيص Pro، وفيه بديل من غير ترخيص. موديول الـ AI Agents بيستخدم نماذج AI مجانية بالكامل (زي Ollama على جهازك). و SQL Server Express و Power BI Desktop بيشتغلوا على Windows.</p></div></details>
+      <details><summary>فيه شهادة؟</summary><div class="a"><p>أيوه، فيه شهادة إتمام (<span class="en">Certificate of Completion</span>) للكورس.</p></div></details>
+      <details><summary>الكورس بيضمن شغل؟</summary><div class="a"><p>لا. الكورس بيبني المهارات والـ Portfolio وبيجهزك للإنترفيو، لكنه ما بيوعدش بوظيفة. النتيجة بتعتمد على التزامك وتطبيقك.</p></div></details>
+      <details><summary>أسجّل إزاي؟</summary><div class="a"><p>ابعت رسالة على WhatsApp من أي زرار في الصفحة، وهتعرف تفاصيل التسجيل وبيانات الدفع. الكورس بيبدأ <span data-start>15 ديسمبر 2026</span>.</p></div></details>
+      <details><summary>إيه طرق الدفع المتاحة؟</summary><div class="a"><p>تحويل بنكي أو InstaPay. سعر الكورس <span class="en" data-price>7,500</span> <span data-currency>جنيه مصري</span>.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 11. FINAL CTA ================= -->
+<section class="final" id="start" aria-labelledby="final-title">
+  <div class="wrap">
+    <div class="box reveal">
+      <div class="avatar"><picture><source srcset="assets/img/amr-avatar.webp" type="image/webp"><img src="assets/img/amr-avatar.jpg" width="240" height="240" alt="Amr Ghabbour" loading="lazy"></picture></div>
+      <h2 id="final-title">ممكن تكون دي <span class="hl">أول خطوة</span> في تغيير مسارك المهني.</h2>
+      <p class="en-line">Your Next Career Opportunity Could Start With One Decision.</p>
+      <div class="meta">
+        <span class="chip">البداية: <b data-start>15 ديسمبر 2026</b></span>
+        <span class="chip">السعر: <b><span class="en" data-price>7,500</span> <span data-currency>جنيه مصري</span></b></span>
+        <span class="chip">تحويل بنكي أو InstaPay</span>
+      </div>
+      <a class="btn btn-primary btn-lg" data-wa="final" href="https://wa.me/96569651179" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true"><use href="#i-wa"/></svg>احجز مكانك الآن على WhatsApp</a>
+      <div class="sigline"><b>Amr Ghabbour</b><br>Data Analytics Instructor</div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="en">© <span data-year>2026</span> Amr Ghabbour · Data Analysis Course</span>
+    <a class="en" data-wa="footer" href="https://wa.me/96569651179" target="_blank" rel="noopener noreferrer">WhatsApp: <span data-wa-number>+96569651179</span></a>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp button (desktop/tablet) -->
+<a class="wa-float" data-wa="floating" href="https://wa.me/96569651179" target="_blank" rel="noopener noreferrer" aria-label="تواصل على WhatsApp"><svg aria-hidden="true"><use href="#i-wa"/></svg></a>
+
+<!-- Sticky enrollment bar (mobile) -->
+<div class="mbar">
+  <div class="p"><b data-price>7,500</b><span>جنيه · يبدأ <span data-start>15 ديسمبر 2026</span></span></div>
+  <a class="btn btn-primary" data-wa="mobile-bar" href="https://wa.me/96569651179" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true"><use href="#i-wa"/></svg>احجز مكانك الآن</a>
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
