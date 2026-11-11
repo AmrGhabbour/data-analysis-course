@@ -64,9 +64,14 @@ const CONFIG = {
     if (lastSent[key] && now - lastSent[key] < 1000) return;
     lastSent[key] = now;
     try {
+      // GA4: sent directly (counted once in GA4)
       if (typeof window.gtag === "function") {
         window.gtag("event", name, Object.assign({ transport_type: "beacon" }, params));
       }
+      // GTM: the same event as a dataLayer "Custom Event" (prefixed lp_), so tags you add later in
+      // Google Tag Manager (e.g. Meta Pixel) can use it. It is NOT sent to GA4 a second time.
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push(Object.assign({ event: "lp_" + name }, params));
     } catch (e) { /* tracking must never break the page */ }
     if (DEBUG && window.console) console.info("[GA4]", name, params);
   }
