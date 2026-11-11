@@ -1,20 +1,19 @@
 <!doctype html>
 <html lang="ar" dir="rtl" class="no-js">
 <head>
-<!-- Google tags (one shared dataLayer):
-     1) Google Tag Manager container GTM-W5QJJRKM: for any extra tags you add later in GTM.
-     2) Google Analytics 4 G-MVC9TPSBH3: sends page_view + the events from script.js.
-        Do NOT also add a GA4 / Google tag for G-MVC9TPSBH3 inside GTM, or every visit is counted twice.
-     Add ?debug_ga=1 to the URL to see events live in GA4 → Admin → DebugView. -->
-<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-W5QJJRKM"></script>
+<meta charset="utf-8">
+<!-- Google tag (gtag.js): Google Analytics 4, Measurement ID G-MVC9TPSBH3.
+     This is the ONLY place GA4 is initialised. The config line sends one page_view per page load.
+     Add ?debug_ga=1 to the page URL to see the events live in GA4 > Admin > DebugView.
+     To change the ID, replace G-MVC9TPSBH3 in BOTH lines below. -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-MVC9TPSBH3"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
+  // One config call = one automatic page_view. With ?debug_ga=1 the hits are flagged for DebugView.
   gtag('config', 'G-MVC9TPSBH3', /[?&]debug_ga=1/.test(location.search) ? { debug_mode: true } : {});
 </script>
-<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>كورس تحليل البيانات | Data Analysis Course · Amr Ghabbour</title>
 <meta name="description" content="كورس تحليل بيانات عملي من Excel و SQL Server و Power BI لحد Python و AI Agents، مع فهم حقيقي للبيزنس والـ KPIs. Live Sessions مرتين في الأسبوع ومتابعة فردية. يبدأ 15 ديسمبر 2026.">
