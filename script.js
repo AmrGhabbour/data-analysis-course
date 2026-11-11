@@ -44,27 +44,80 @@ const CONFIG = {
   fill("[data-wa-number]", "+" + digits);
   fill("[data-year]", String(new Date().getFullYear()));
 
-  /* ---------- 3. Click tracking ----------
-     Every WhatsApp button has data-wa="where-it-is" (hero, pricing, final…).
-     Each click is logged to the browser console and, if you later add
-     Google Analytics / Google Tag Manager / Meta Pixel, sent there too. */
+  /* ---------- 3. Google Analytics 4 tracking ----------
+     The Google tag itself is installed in the <head> of index.html (page_view is automatic).
+     Events sent from here (one listener each, so nothing is counted twice):
+       whatsapp_click            every WhatsApp button      cta_location, cta_type (enroll | contact)
+       generate_lead             enrollment buttons only    cta_location, value, currency
+       curriculum_view           curriculum section reaches mid-screen (once per page load)
+       curriculum_link_click     "المنهج" / "اكتشف تفاصيل الكورس"  cta_location
+       curriculum_module_toggle  a module opened/closed     module_number, module_name, action
+       curriculum_toggle_all     "open all / close all"     action
+     Labels come from the HTML: data-wa="where", data-cta="enroll|contact", data-track="where". */
+  const DEBUG = /[?&]debug_ga=1/.test(location.search);
+  const lastSent = {};
   function trackEvent(name, params) {
     params = params || {};
+    // De-duplicate: ignore the same event from the same place within 1 second (double taps / double clicks).
+    const key = name + "|" + (params.cta_location || params.module_number || params.action || "");
+    const now = Date.now();
+    if (lastSent[key] && now - lastSent[key] < 1000) return;
+    lastSent[key] = now;
     try {
-      window.dataLayer = window.dataLayer || [];
-      window.dataLayer.push(Object.assign({ event: name }, params));       // Google Tag Manager
-      if (typeof window.gtag === "function") window.gtag("event", name, params); // Google Analytics 4
-      if (typeof window.fbq === "function") window.fbq("track", "Contact", params); // Meta Pixel
-    } catch (e) { /* tracking must never break the button */ }
-    if (window.console && console.info) console.info("[track]", name, params);
+      if (typeof window.gtag === "function") {
+        window.gtag("event", name, Object.assign({ transport_type: "beacon" }, params));
+      }
+    } catch (e) { /* tracking must never break the page */ }
+    if (DEBUG && window.console) console.info("[GA4]", name, params);
   }
   window.trackEvent = trackEvent;
 
+  const PRICE_VALUE = Number(String(CONFIG.price).replace(/[^\d.]/g, "")) || undefined;
+
+  // WhatsApp buttons + enrollment CTAs (one delegated listener; works for mouse, touch and keyboard)
   document.addEventListener("click", function (e) {
-    const a = e.target.closest ? e.target.closest("[data-wa]") : null;
-    if (!a) return;
-    trackEvent("whatsapp_click", { cta_location: a.getAttribute("data-wa") || "unknown" });
+    if (!e.target.closest) return;
+    const wa = e.target.closest("[data-wa]");
+    if (wa) {
+      const where = wa.getAttribute("data-wa") || "unknown";
+      const type = wa.getAttribute("data-cta") || "contact";
+      trackEvent("whatsapp_click", { cta_location: where, cta_type: type, link_url: wa.href });
+      if (type === "enroll") {
+        trackEvent("generate_lead", { cta_location: where, value: PRICE_VALUE, currency: CONFIG.currencyEn });
+      }
+      return;
+    }
+    const link = e.target.closest('a[href="#curriculum"]');
+    if (link) {
+      trackEvent("curriculum_link_click", { cta_location: link.getAttribute("data-track") || "link" });
+    }
   });
+
+  // Curriculum: a module opened or closed by the visitor (clicks on the module header only,
+  // so "open all / close all" below does not also fire 8 module events)
+  document.querySelectorAll(".acc details > summary").forEach(function (s, i) {
+    s.addEventListener("click", function () {
+      const d = s.parentElement;
+      const nameEl = s.querySelector(".ttl b");
+      trackEvent("curriculum_module_toggle", {
+        module_number: i + 1,
+        module_name: nameEl ? nameEl.textContent.trim() : "",
+        action: d.open ? "close" : "open"        // state before the browser toggles it
+      });
+    });
+  });
+
+  // Curriculum: section seen (once per page load)
+  const curr = document.getElementById("curriculum");
+  if (curr && "IntersectionObserver" in window) {
+    const cio = new IntersectionObserver(function (entries) {
+      if (entries.some(function (en) { return en.isIntersecting; })) {
+        trackEvent("curriculum_view", {});
+        cio.disconnect();
+      }
+    }, { rootMargin: "-45% 0px -45% 0px", threshold: 0 });   // fires when the section reaches the middle of the screen (works for any section height)
+    cio.observe(curr);
+  }
 
   /* ---------- 4. Mobile menu ---------- */
   const menuBtn = document.querySelector(".menu-btn");
@@ -89,6 +142,7 @@ const CONFIG = {
       mods.forEach(function (d) { d.open = anyClosed; });
       toggleAll.textContent = anyClosed ? "اقفل كل الموديولات" : "افتح كل الموديولات";
       toggleAll.setAttribute("aria-pressed", anyClosed ? "true" : "false");
+      trackEvent("curriculum_toggle_all", { action: anyClosed ? "open_all" : "close_all" });
     });
   }
 
